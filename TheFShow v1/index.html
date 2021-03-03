@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/default.css">
+    <!--LIB-->
+    <script src="scripts/lib/routie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="scripts/main.js" defer></script>
+    <title>Omnivers</title>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header>
+            <div class="container">
+                <h1>OMNIVERS</h1>
+            </div>
+        </header>
+        <nav class="container">
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#informations">informations</a></li>
+                <li><a href="#demo">Démo</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reseaux_sociaux">Réseaux sociaux</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="container">
+
+        <section class="main-container" id="js-main-container">
+
+            <p>https://www.austenpaul.com/</p>
+
+            <script id="services-tpl" type="text/template">
+                <section class="stock-services">
+                    <h2></h2>
+                    {{}}
+                    <div>
+                        <h3></h3>
+                        <article>
+                            <p></p>
+                        </article>
+                    </div>
+                    {{}}
+                </section>
+            </script>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
