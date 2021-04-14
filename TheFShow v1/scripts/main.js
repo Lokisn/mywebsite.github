@@ -5,7 +5,7 @@
  * @author Loki
  *
  * Created at     : 2021-02-26 20:04:13
- * Last modified  : 2021-02-26 20:23:28
+ * Last modified  : 2021-04-14 19:47:04
  */
 
 //-- 0) Vérification --//
@@ -22,33 +22,29 @@ const viewContainer = document.querySelector("#js-main-container");
 
 routie({
     accueil: function() {
-        console.log("Accueil");
         showHomePage("views/accueil.html");
     },
     services: function() {
-        console.log("Services");
+        showServicesPage("views/services.html");
     },
     informations: function() {
-        console.log("Informations");
+        showInfosPage("views/informations.html");
     },
     demo: function() {
-        console.log("Démo");
+        showDemoPage("views/demo.html");
     },
     projets: function() {
-        console.log("Projets");
-    },
-    informations: function() {
-        console.log("Informations");
+        showProjectPage("views/projets.html");
     },
     contact: function() {
-        console.log("Contact");
+        showContactPage("views/contact.html");
     },
     reseaux_sociaux: function() {
-        console.log("Réseaux sociaux");
+        showSocialMediaPage("views/reseau-sociaux.html");
     },
 });
 
-//-- 4) Fetcher un accueil appart --//
+//-- 4) Fetcher la page d'accueil --//
 
 function showHomePage(views) {
     fetch(views)
@@ -60,14 +56,82 @@ function showHomePage(views) {
         });
 }
 
-//-- 5) Mustache |  --//
+//-- 5) Fetcher la page des services |  --//
 
-//-- 6) Mustache |  --//
+function showServicesPage(views) {
+    fetch(views)
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            viewContainer.innerHTML = html;
+        });
+}
 
-//-- 7) Mustache |  --//
+//-- 6) Fetcher la page des informations |  --//
 
-//-- 8) Mustache |  --//
+function showInfosPage(views) {
+    fetch(views)
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            viewContainer.innerHTML = html;
+        });
+}
 
-//-- 9) Mustache |  --//
+//-- 7) Fetcher la page démo |  --//
+
+function showDemoPage(views) {
+    fetch(views)
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            viewContainer.innerHTML = html;
+        });
+}
+
+//-- 8) Fetcher la page des projets |  --//
+
+function showProjectPage(views) {
+    fetch(views)
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            viewContainer.innerHTML = html;
+        });
+}
+
+//-- 9) Fetcher la page pour contacter |  --//
+
+function showContactPage(views) {
+    fetch(views)
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            viewContainer.innerHTML = html;
+        });
+}
+
+//-- 10) Fetcher la page pour les réseaux sociaux |  --//
+
+function showSocialMediaPage(views) {
+    fetch(views)
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            viewContainer.innerHTML = html;
+        });
+}
 
 //-- localstorage Dark mode aurore boréales   --//
+
+//-- Forcer l'accueil à se lancer au démarrage --//
+
+if (!window.location.hash) {
+    routie("accueil");
+}
