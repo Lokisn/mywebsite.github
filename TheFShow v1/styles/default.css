@@ -56,6 +56,12 @@ main {
 
 /*-- Menu + Navigation --*/
 
+.link a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .menu {
     display: flex;
     padding: 0;
