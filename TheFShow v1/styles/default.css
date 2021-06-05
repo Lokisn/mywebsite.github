@@ -2,187 +2,186 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Raleway:wght@200&display=swap");
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /*---- Classe Basique ----*/
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: "Fira Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
 }
 
 h1 {
-    font-family: "Raleway", sans-serif;
-    font-size: 2.8em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.8em;
 }
 
 .container a h1 {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a {
-    color: #222;
-    text-decoration: none;
-    cursor: pointer;
+  color: #222;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 nav {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 main {
-    width: 80%;
-    margin: 5% auto;
-    min-height: 90vh;
+  width: 80%;
+  margin: 5% auto;
+  min-height: 90vh;
 }
-
 
 /*---- Classe Personnalisées ----*/
 
 .header-wrapper {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-image: url(../img/background_stars.jpg);
-    color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: url(../img/background_stars.jpg);
+  color: #fff;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .main-container {
-    padding-top: 180px;
+  padding-top: 180px;
 }
 
+/* Réseaux sociaux - texte - image */
 
-/* Réseaux sociaux - image */
+.social-link {
+  transition: all 250ms ease;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  color: #11b1d0;
+}
 
 .image-container {
-    width: 80%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 2px #222 solid;
-    margin: 5% auto;
+  width: 80%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px #222 solid;
+  margin: 5% auto;
 }
 
 .image-container p {
-    flex-basis: 100%;
-    margin: 5% auto;
-    text-align: center;
-    font-size: 2em;
-    transition: all 250ms ease;
-}
-
-.image-container a:hover {
-    color: #11b1d0;
+  flex-basis: 100%;
+  margin: 5% auto;
+  text-align: center;
+  font-size: 2em;
 }
 
 .image-container img {
-    flex-basis: 50%;
-    align-items: center;
-    justify-content: center;
-    background-color: #555;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #555;
 }
-
 
 /*-- Menu + Navigation --*/
 
 .link a {
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .menu {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    font-size: 1.2em;
-    list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  list-style: none;
 }
 
 .menu li {
-    display: block;
+  display: block;
 }
 
 .menu a {
-    display: block;
-    color: #fff;
-    margin-right: 10px;
-    padding: 5px;
-    transition: all 200ms ease-in;
-    border-radius: 3px;
-    text-decoration: none;
+  display: block;
+  color: #fff;
+  margin-right: 10px;
+  padding: 5px;
+  transition: all 200ms ease-in;
+  border-radius: 3px;
+  text-decoration: none;
 }
 
 .menu a:hover {
-    background-color: #ccc;
-    color: #11b1d0;
+  background-color: #ccc;
+  color: #11b1d0;
 }
 
 .stock-jokes {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .stock-jokes h2 {
-    font-size: 1.6em;
-    font-family: cursive;
-    padding: 28px;
+  font-size: 1.6em;
+  font-family: cursive;
+  padding: 28px;
 }
 
 .stock-jokes div {
-    flex-basis: 48%;
-    background-color: #febb0f;
-    padding: 6px;
-    margin: 10px;
-    border-radius: 10px;
+  flex-basis: 48%;
+  background-color: #febb0f;
+  padding: 6px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .stock-jokes article {
-    background-color: #057df5;
-    border-radius: 18px;
-    padding: 10px;
-    margin: 10px;
+  background-color: #057df5;
+  border-radius: 18px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .stock-jokes p {
-    color: #fff;
-    font-size: 1em;
+  color: #fff;
+  font-size: 1em;
 }
 
 .media-fluide {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    height: 90px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #161a24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 90px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #161a24;
 }
-
 
 /*-- Media Query --*/
 
 @media screen and (max-width: 825px) {
-    .container {
-        width: 90%;
-    }
+  .container {
+    width: 90%;
+  }
 }
